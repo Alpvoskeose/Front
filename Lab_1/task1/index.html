@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Highlight Toggle</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+    </html>
+    <body>
+
+        <p id="myText">Это обычный текст который будет выделяться</p>
+        <button id="toggleHighlight">Toggle Highlight</button>
+
+        <script>
+            $(document).ready(function() {
+                $('#toggleHighlight').click(function() {
+                    $('#myText').toggleClass('highlight');
+                });
+            });
+        </script>
+    </body>
+    </html>
